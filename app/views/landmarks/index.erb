@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Landmarks</title>
+  </head>
+  <body>
+    <h1>Landmarks</h1>
+    <% @landmarks.each do |landmark| %>
+      <h2><%= landmark.name %></h2>
+      <p><%= landmark.figure.name %></p>
+      <p><%= landmark.year_completed %></p>
+    <% end %>
+  </body>
+</html>
